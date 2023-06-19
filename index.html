@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Password Checker & Generator</title>
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        
+        <div class="pwd-generator">
+            <label for="chk" aria-hidden="true">Password Generator</label>
+            <div class="pwd-field">
+                <input type="password" placeholder="Generated Password">
+                <span class="fas fa-copy copy-icon"></span>
+            </div>
+            <div class="pass-indicator">
+                <div class="pass-length">
+                    <div class="details">
+                        <label class="title">Password Length</label>
+                        <span>15</span>
+                    </div>
+                    <input type="range" min="1" max="32" step="1">
+                </div>
+                <div class="pass-settings">
+                    <label class="title">SETTINGS</label>
+                    <div class="include-someword">
+                        <input type="text" placeholder="Include Someword">
+                    </div>
+                    <div class="include-uppercase-letter">
+                        Include Uppercase Letter
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="toggle-uppercase">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="include-numbers">
+                        Include Numbers
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="toggle-numbers">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="include-symbols">
+                        Include Symbols
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="toggle-symbols">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="exclude-duplicate">
+                        Exclude Duplicate
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="toggle-duplicate">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="include-spaces">
+                        Include Spaces
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="toggle-space">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pwd-checker">
+            <label for="chk" aria-hidden="true">Password Checker</label>
+            <div class="input-pwd">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button>Check Password</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
